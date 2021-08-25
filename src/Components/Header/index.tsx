@@ -1,5 +1,7 @@
 import Image from 'next/image';
 
+import { SignInButton } from '../SignInButton';
+
 import logoImg from '../../../public/images/logo.svg';
 
 import styles from './styles.module.scss';
@@ -13,6 +15,7 @@ export function Header() {
           <a className={styles.active} href="#">Home</a>
           <a href="#">Posts</a>
         </nav>
+        <SignInButton />
       </div>
     </header>
   )
